@@ -1,7 +1,7 @@
 # linguacode-constants
 
 ## Description
-**node-cache-wiper** is a library which includes all constants that have been used in linguacode-core.
+**linguacode-constants** is a library which includes all constants that have been used in linguacode-core.
 It's also includes command translations, such as **hy**, **en**, **ru**, etc.
 
 ## How to install
