@@ -20,4 +20,4 @@ console.log(CONSTANT.TIMEOUT_TIME); //666
 
 
 ##License
-node-cache-wiper is [licensed under MIT](https://github.com/linguacode/linguacode-constants/blob/master/LICENSE).
+linguacode-constants is [licensed under MIT](https://github.com/linguacode/linguacode-constants/blob/master/LICENSE).
