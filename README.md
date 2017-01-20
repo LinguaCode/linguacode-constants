@@ -1,29 +1,23 @@
-# node-cache-wiper
+# linguacode-constants
 
 ## Description
-**node-cache-wiper** is a cache wiper of the required modules in Node.js.  
-It's useful when you making tests and there is a need refresh caches.
-
+**node-cache-wiper** is a library which includes all constants that have been used in linguacode-core.
+It's also includes command translations, such as **hy**, **en**, **ru**, etc.
 
 ## How to install
 
 ```sh
-$ npm install https://github.com/otanim/node-cache-wiper --save
+$ npm install https://github.com/linguacode/linguacode-constants --save
 ```
 
 ### Usage
 
 ```javascript
-const cacheWiper = require('node-cache-wiper');
+const CONSTANT = require('linguacode-constants');
 
-const serverPath = './src/server';
-let server = require(serverPath);   //content of the "server" file now was cached
-
-cacheWiper(serverPath);             //cache of the "server" file now was wiped
-
-server = require(serverPath);       //content of the "server" file now was cached AGAIN
+console.log(CONSTANT.TIMEOUT_TIME); //666
 ```
 
 
 ##License
-node-cache-wiper is [licensed under MIT](https://github.com/otanim/node-cache-wiper/blob/master/LICENSE).
+node-cache-wiper is [licensed under MIT](https://github.com/linguacode/linguacode-constants/blob/master/LICENSE).

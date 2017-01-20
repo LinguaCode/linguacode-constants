@@ -1,33 +1,34 @@
 {
-  "name": "node-cache-wiper",
+  "name": "linguacode-constants",
   "version": "0.0.1",
-  "description": "Cache wiper of the required modules in Node.js",
-  "main": "index.js",
-  "homepage": "https://github.com/otanim/node-cache-wiper",
+  "description": "Constants",
+  "main": "./src/index.js",
+  "homepage": "https://github.com/linguacode/linguacode-constants",
   "author": "Arman Yeghiazaryann <otanim617@gmail.com> (http://otanim.com)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/otanim/node-cache-wiper"
+    "url": "git+https://github.com/linguacode/linguacode-constants"
   },
   "engines": {
-    "node": ">= 4.4.7"
+    "node": ">= 7.4.0"
   },
-  "license": "SEE LICENSE file",
+  "license": "SEE the LICENSE file",
   "keywords": [
     "js",
     "es5",
     "node",
-    "cache",
-    "wiper",
-    "node.js",
-    "require",
-    "cache-wiper",
-    "node-cache-wiper"
-    ],
+    "education",
+    "programming",
+    "linguacode",
+    "language"
+  ],
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "require-dir": "^0.3.1"
+  },
   "bugs": {
-    "url": "https://github.com/otanim/node-cache-wiper/issues"
+    "url": "https://github.com/linguacode/linguacode-constants/issues"
   }
 }
