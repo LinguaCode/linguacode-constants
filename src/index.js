@@ -2,7 +2,6 @@ const requireDir = require('require-dir');
 
 //collections of files of constants
 exports.SYNTAX = requireDir('./syntax');
-exports.TRANSLATION = requireDir('./translation');
 
 //files of constants
 exports.ENVIRONMENT = require('./environment');
