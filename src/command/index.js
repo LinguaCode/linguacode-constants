@@ -1,27 +1,27 @@
-exports.INPUT = '%input';
-exports.OUTPUT = '%output';
+exports.INPUT = '@input';
+exports.OUTPUT = '@output';
 
-exports.IF = '%if';
-exports.ELSE = '%else';
+exports.IF = '@if';
+exports.ELSE = '@else';
 exports.ELIF = `${exports.ELSE} ${exports.IF}`;
-exports.THEN = '%then';
+exports.THEN = '@then';
 
-exports.FALSE = '%false';
-exports.TRUE = '%true';
+exports.FALSE = '@false';
+exports.TRUE = '@true';
 
-exports.REPEAT = '%repeat';
-exports.WHILE = '%while';
-exports.DO = '%do';
-exports.TIMES = '%times';
+exports.REPEAT = '@repeat';
+exports.WHILE = '@while';
+exports.DO = '@do';
+exports.TIMES = '@times';
 
-exports.BREAK = '%break';
-exports.CONTINUE = '%continue';
+exports.BREAK = '@break';
+exports.CONTINUE = '@continue';
 
-exports.OR = '%or';
-exports.AND = '%and';
-exports.NOT = '%not';
+exports.OR = '@or';
+exports.AND = '@and';
+exports.NOT = '@not';
 
-exports.FUNCTION = '%function';
+exports.FUNCTION = '@function';
 
 //math
 const MATH = require('./math');
