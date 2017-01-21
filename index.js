@@ -1,3 +1,3 @@
 console.log(require('./src'));
 
-exports.module = require('./src');
+module.exports = require('./src');
