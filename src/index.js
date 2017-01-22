@@ -1,7 +1,10 @@
-const requireDir = require('require-dir');
-
 //collections of files of constants
-exports.SYNTAX = requireDir('./syntax');
+const SYNTAX_LIST = ['commands', 'functions', 'globals', 'quotes', 'source'];
+let SYNTAX = {};
+for (let key in SYNTAX_LIST) {
+  SYNTAX[key] = require('./syntax/' + key);
+}
+exports.SYNTAX = SYNTAX;
 
 //files of constants
 exports.ENVIRONMENT = require('./environment');
