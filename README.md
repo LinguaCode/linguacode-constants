@@ -5,9 +5,15 @@
 
 ## How to install
 
+#### yarn
 ```sh
-$ npm install https://github.com/linguacode/linguacode-constants --save
+yarn add https://github.com/linguacode/linguacode-constants --save
 ```
+#### npm
+```sh
+npm install https://github.com/linguacode/linguacode-constants --save
+```
+
 
 ### Usage
 
