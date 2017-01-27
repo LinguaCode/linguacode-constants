@@ -1,6 +1,6 @@
 //collections of files of constants
 const SYNTAX_LIST = ['commands', 'functions', 'globals', 'quotes', 'source'];
-const SYNTAX = {};
+var SYNTAX = {};
 SYNTAX_LIST.forEach((syntax) => {
   SYNTAX[syntax] = require('./syntax/' + syntax);
 });
