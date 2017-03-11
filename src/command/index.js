@@ -24,7 +24,7 @@ exports.NOT = '@not';
 exports.FUNCTION = '@function';
 
 //math
-const MATH = require('./math');
+var MATH = require('./math');
 exports = Object.assign(exports, MATH);
 
 //conditions regular expressions

@@ -18,7 +18,7 @@ npm install https://github.com/linguacode/linguacode-constants --save
 ### Usage
 
 ```javascript
-const CONSTANT = require('linguacode-constants');
+var CONSTANT = require('linguacode-constants');
 
 console.log(CONSTANT.TIMEOUT_TIME); //666
 ```

@@ -1,4 +1,4 @@
-const COMMAND = require('../command');
+var COMMAND = require('../command');
 
 module.exports = [{
   command: `(${COMMAND.NOT})\\s*\\(`,
