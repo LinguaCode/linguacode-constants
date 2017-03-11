@@ -28,7 +28,7 @@ const MATH = require('./math');
 exports = Object.assign(exports, MATH);
 
 //conditions regular expressions
-exports.IF_WHILE_REPEAT = `${exports.IF}|${exports.WHILE}|${exports.REPEAT}`;
-exports.CONDITION_VALUE = `(${exports.IF_WHILE_REPEAT})\\s+([^\\r\\n]*[^\\${exports.THEN}])( ${exports.THEN})*`;
-exports.CONDITION_OF_REPEAT_TIMES_VALUE = `(.*)\\s+${exports.TIMES}`;
-exports.CONDITION_TYPE = `\\s*(${exports.IF_WHILE_REPEAT}|${exports.ELSE}|${exports.DO}|${exports.ELIF})`;
+exports.IF_WHILE_REPEAT = exports.IF + "|" + exports.WHILE + "|" + exports.REPEAT;
+exports.CONDITION_VALUE = "(" + exports.IF_WHILE_REPEAT + ")\\s+([^\\r\\n]*[^\\" + exports.THEN + "])( " + exports.THEN + ")*";
+exports.CONDITION_OF_REPEAT_TIMES_VALUE = "(.*)\\s+" + exports.TIMES;
+exports.CONDITION_TYPE = "\\s*(" + exports.IF_WHILE_REPEAT + "|" + exports.ELSE + "|" + exports.DO + "|" + exports.ELIF + ")";
