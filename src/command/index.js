@@ -3,7 +3,7 @@ exports.OUTPUT = '@output';
 
 exports.IF = '@if';
 exports.ELSE = '@else';
-exports.ELIF = `${exports.ELSE} ${exports.IF}`;
+exports.ELIF = exports.ELSE + ' ' + exports.IF;
 exports.THEN = '@then';
 
 exports.FALSE = '@false';
