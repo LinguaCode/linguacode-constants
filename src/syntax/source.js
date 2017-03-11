@@ -1,9 +1,4 @@
 module.exports = [{
   command: '^([\\d\\D]*)$',
-  definition: `
-      (() => {
-        let output = '';
-        $1
-        return output;
-      })();`
+  definition: '\n      (() => {\n        let output = \'\';\n        $1\n        return output;\n      })();'
 }];

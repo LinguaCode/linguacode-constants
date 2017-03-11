@@ -1,7 +1,7 @@
 var COMMAND = require('../command');
 
 module.exports = [{
-  command: `(${COMMAND.NOT})\\s*\\(`,
+  command: '(' + COMMAND.NOT + ')\\s*\\(',
   definition: '!('
 }, {
   command: COMMAND.TRUE,
@@ -22,13 +22,13 @@ module.exports = [{
   command: COMMAND.E,
   definition: 'Math.E'
 }, {
-  command: `${COMMAND.OUTPUT}\\s*\\((.*)\\)(.*);`,
-  definition: `output = $1;`
+  command: COMMAND.OUTPUT + '\\s*\\((.*)\\)(.*);',
+  definition: 'output = $1;'
 }, {
-  command: `${COMMAND.IF}\\s+([^\\r\\n]*[^\\${COMMAND.THEN}])( ${COMMAND.THEN})*`,
+  command: COMMAND.IF + '\\s+([^\\r\\n]*[^\\' + COMMAND.THEN + '])( ' + COMMAND.THEN + ')*',
   definition: 'if ($1)'
 }, {
-  command: `${COMMAND.WHILE}\\s+(.*)\\s*`,
+  command: COMMAND.WHILE + '\\s+(.*)\\s*',
   definition: 'while ($1)'
 }, {
   command: COMMAND.ELSE,
@@ -40,7 +40,7 @@ module.exports = [{
   command: COMMAND.CONTINUE,
   definition: 'continue'
 }, {
-  command: `${COMMAND.FUNCTION} \\s*\\(([^\\n\\r\\;])\\)\\s*`,
+  command: COMMAND.FUNCTION + ' \\s*\\(([^\\n\\r\\;])\\)\\s*',
   definition: 'function ($1)'
 }, {
   command: '#',
