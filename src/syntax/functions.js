@@ -1,5 +1,13 @@
 var COMMAND = require('../command');
 
+var numberFixer = function (value) {
+  return 'parseFloat(' + value + '.toFixed(10))'
+};
+
+var tan = function () {
+  return '((value) => {return value == Math.PI / 2 ? Infinity : value == Math.PI ? 0 : ' + numberFixer('Math.tan(value)') + '})($1)';
+};
+
 module.exports = [{
   command: COMMAND.POW,
   definition: 'Math.pow($1, $2)'
@@ -29,7 +37,7 @@ module.exports = [{
   definition: 'Math.log($2)/Math.log($1)'
 }, {
   command: COMMAND.RANDOM,
-  definition: '((min,max)=>{if(typeof(max)==\'undefined\') {max=min;min=0}\nreturn Math.floor(Math.random()*(max-min+1)+min)})($1,$2)'
+  definition: '((min,max) => {if(typeof(max)==\'undefined\') {max=min;min=0}\nreturn Math.floor(Math.random()*(max-min+1)+min)})($1,$2)'
 }, {
   command: COMMAND.ABS,
   definition: 'Math.abs($1)'
@@ -47,14 +55,14 @@ module.exports = [{
   definition: '(Math.PI / 2 - Math.atan($1))'
 }, {
   command: COMMAND.SIN,
-  definition: 'Math.sin($1)'
+  definition: numberFixer('Math.sin($1)')
 }, {
   command: COMMAND.COS,
-  definition: 'Math.cos($1)'
+  definition: numberFixer('Math.cos($1)')
 }, {
   command: COMMAND.TAN,
-  definition: 'Math.tan($1)'
+  definition: tan(),
 }, {
   command: COMMAND.CTG,
-  definition: '1/Math.tan($1)'
+  definition: '1/' + tan(),
 }];
