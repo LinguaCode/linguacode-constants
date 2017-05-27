@@ -22,7 +22,7 @@ module.exports = [{
   command: COMMAND.E,
   definition: 'Math.E'
 }, {
-  command: COMMAND.OUTPUT + '\\s*\\((.*)\\)(.*);',
+  command: COMMAND.OUTPUT + '(.*);',
   definition: 'output = $1;'
 }, {
   command: COMMAND.IF + '\\s+([^\\r\\n]*[^\\' + COMMAND.THEN + '])( ' + COMMAND.THEN + ')*',

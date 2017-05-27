@@ -1,6 +1,6 @@
 {
   "name": "linguacode-constants",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Constants",
   "main": "./src/index.js",
   "homepage": "https://github.com/linguacode/linguacode-constants",
